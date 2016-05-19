@@ -1,0 +1,237 @@
+
+
+
+/*中间人才状态样式*/
+#center-content {
+    /*width:250px;*/
+    float:left;
+    width:17%;
+    min-width:230px;
+    height:100%;
+    border-right:2px solid #d8d8d8;
+}
+#center-content a:hover{
+    text-decoration: none;
+}
+.company_center_slide {
+    background-color: #fff;
+    /*margin-bottom: 12px;*/
+    text-align:left;
+}
+.company_center_slide dt {
+    height: 22px;
+    line-height: 22px;
+    color: #777;
+    padding: 10px 10px 10px 30px;
+    max-height: 40px;
+    overflow: hidden;
+    border-bottom:1px solid #e5e5e5;
+}
+.company_center_slide dd {
+    position: relative;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.ren_company_center_slide a {
+    display: block;
+    height: 40px;
+    line-height: 50px;
+    padding-left: 50px;
+    color: #666;
+    position: relative;
+}
+.ren_company_center_slide dd span {
+    width:20px;
+    height:20px;
+    line-height:20px;
+    color: #fff;
+    text-align:center;
+    /*padding: 2px 8px;*/
+    margin-left:150px;
+    background-color: #72d8f7;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 10px;
+    position:absolute;
+    top:15px;
+    right:50px;
+}
+.selected {
+    background-color: #fafafa;
+}
+.acolor {
+    color: #72d8f7!important;
+}
+.slidebar  p{
+    font-size:18px;
+    height: 22px;
+    line-height: 22px;
+    color: #333;
+    padding: 10px 10px 10px 30px;
+    text-align:left;
+
+}
+.tags ul li{
+    height:40px;
+    position:relative;
+}
+
+.tags ul li.highlight{
+    background-color: #fafafa;
+}
+.iconTag {
+    width: 20px;
+    height: 20px;
+    background: url("../images/iconfont-biaoqian.png") no-repeat;
+    cursor: text;
+    display: inline-block;
+    position:absolute;
+    left:30px;
+    top:10px;
+}
+.tag span{
+    line-height:40px;
+    display: block;
+    padding-left: 50px;
+    text-align: left;
+    cursor:pointer;
+}
+/*右侧简历部分*/
+.addResume {
+
+}
+.resume {
+    width:755px;
+    background-color: #fff;
+    float:right;
+    padding-bottom:15px;
+    border-bottom:3px solid #E6F8FD;
+    margin-bottom:3px;
+}
+.img{
+    float:left;
+    line-height: 32px;
+    text-align: center;
+    width: 80px;
+    padding: 15px 15px 0 15px;
+}
+img.normalFace {
+    height: 80px;
+    width: 80px;
+}
+.resumeName {
+    height: 20px;
+    line-height: 20px;
+}
+.resume-detail{
+    float:left;
+    width:213px;/*260px*/
+    text-align:left;
+    padding: 15px 0 10px 20px;
+    line-height:22px;
+    color:#454545;
+}
+.resume-detail span{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.resume-center {
+    padding-left:40px!important;
+    padding-top: 35px !important;
+}
+.resume-right {
+    float:right;
+    margin: 70px 10px 0 0;
+}
+.resume-bottom{
+    float: left;
+    text-align: left;
+    line-height: 26px;
+    color: #454545;
+    position:relative;
+}
+.tag-list {
+    width: 600px;
+    position: absolute;
+    top: 110px;
+    left: -220px;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    display: inline-block;
+    padding-left: 20px;
+}
+.myTags {
+    display:inline-block;
+}
+.edit-icon ,.icon-tags{
+    display:inline-block;
+    width:20px;
+    height:20px;
+    position:absolute;
+
+}
+.edit-icon {
+    background:url("../images/iconfont-dabiaoqian1.png") no-repeat;
+    top:3px;
+    /*left:50px;*/
+    /*left:0;*/
+    margin-left: 4px;
+}
+.icon-tags {
+    background:url("../images/iconfont-biaoqian.png") no-repeat;
+    margin:4px 0 0 -14px;
+    cursor:text;
+}
+.tag-index {
+    margin-left:6px;
+    height:22px;
+    background-color:#e75e58;
+    border-radius:8px;
+    padding:5px;
+    color:#fff;
+}
+
+textarea {
+    outline:none;
+    word-wrap: break-word;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.statusselect {
+    width:100%;
+    height:30px;
+    outline:none;
+    border: 1px solid #00aaed;
+    border-radius: 5px;
+}
+
+.tag-text{
+    float:left;
+    /*width:100%;*/
+    height:22px;
+    background-color:#f1f1f1;
+    border-radius:8px;
+    padding:5px;
+    margin-left:8px;
+}
+.close {
+    display:inline-block;
+    cursor:pointer;
+    width:15px;
+    height:15px;
+    line-height:15px;
+    background-color:#fff;
+    border-radius:7px;
+    color:#333;
+    text-align:center;
+    margin-left:3px;
+    margin-bottom:3px;
+}
+.talent-pool {
+    cursor:pointer;
+}
+.company_center_slide dt img {
+    padding-left:100px;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>招人才</title>
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/aside.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/iconfont.css">
+</head>
+<body>
+<div id="header">
+    <div class="header-title">
+        <p>
+            <a href="index.html">
+                <i class="iconfont iconsize50 iconColor-fff">&#xe60d;</i>聘宝
+            </a>
+        </p>
+    </div>
+    <div class="addChannel">
+        <a href="setting.html" title="" >
+            <span>添加渠道</span>
+            <i class="iconfont icon-size22">&#xe608;</i>
+        </a>
+    </div>
+    <div class="header-input">
+        <div class="s_input">
+            <div class="s_box">
+                <input class="s_keyworld" type="text" placeholder="输入关键字搜索"/>
+                <input id="jId" type="hidden"/>
+                <i id="s_btn" class="iconfont icon-size22 search-color" type="submit">&#xe600;</i>
+            </div>
+        </div>
+    </div>
+    <div class="addJob">
+
+        <a class="icon-add" id="addBtn" href="addjob.html?id=">
+            <span>发布新职位</span>
+            <i class="iconfont icon-size22">&#xe608;</i>
+        </a>
+    </div>
+    <div class="userInfo-box" >
+        <i class="iconfont iconColor-fff">&#xe609;</i>
+        <span id="userInfo" class="info-color"></span>
+        <a class="layout-color" href="javascript:logout()"> 注销 </a>
+    </div>
+</div>
+<div id="warp_box">
+    <div id="container">
+        <!--左侧部分-->
+        <div id="left-content">
+            <ul>
+                <li class="index active">
+                    <a href="javascript:">
+                        <p><i class="iconfont icon-size22">&#xe606;</i><br>招才宝</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="index-2.html">
+                        <p><i class="iconfont icon-size22">&#xe601;</i><br>聚才宝</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="btn-set">
+                <a href="setting.html">
+                    <p><i class="iconfont icon-size22">&#xe605;</i><br>设置</p>
+                </a>
+            </div>
+        </div>
+        <!--中间招聘职位部分-->
+        <div id="center-content">
+            <div class="slidebar">
+                <dl class="company_center_slide add-jobdetail">
+                    <dt>
+                    <h2>招聘职位</h2>
+                    </dt>
+                </dl>
+                <dl class="company_center_slide oldjob">
+                    <dd class="history"><a href="javascript:job();"><h2>历史职位</h2></a></dd>
+                </dl>
+            </div>
+        </div>
+        <!--右侧招人才简历部分-->
+        <div id="right-content">
+            <!--简历详情-->
+            <div class="control-box">
+            </div>
+            <!--筛选简历部分-->
+            <div class="nav">
+                <ul class="list-ul">
+                </ul>
+            </div>
+            <!--简历-->
+            <div id="s_joblist" class="s_joblist">
+                <ul class="list_ul" id="list_item"></ul>
+            </div>
+            <!--page-->
+            <div class="page_box">
+                <ul class="page_list">
+                    <li id="preP"><a href="javascript:">上一页</a></li>
+                    <li id="nextP"><a href="javascript:">下一页</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!--招聘渠道管理-->
+<div class="mask">
+    <div class="channel">
+        <div class="channel-head">
+            <div class="head-title">
+                <span class="f20">渠道管理</span>
+            </div>
+            <div class="head-content">
+                <ul>
+                    <li><span class="circle orange">1</span><span class="font-color">选择渠道</span><span
+                            class="line"></span></li>
+                    <li><span class="circle">2</span><span>绑定账号</span><span class="line"></span></li>
+                    <!--<li><span class="circle">3</span><span>邮箱设置</span><span class="line"></span></li>-->
+                    <li><span class="circle">3</span><span>完成</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="channel-body">
+            <!--第一页-->
+            <div class="channel-first">
+                <p class="prompt">您需要至少绑定一个招聘网站的账号才能流畅使用招才宝。</p>
+                <div class="body-detail"></div>
+                <div class="body-next">
+                    <p class="page-btn">
+                        <span class="cancel-btn">取消</span>
+                        <span id="first-next-btn" class="next-btn">下一步</span>
+                    </p>
+                </div>
+            </div>
+            <!--第二页-->
+            <div class="channel-second" style="display:none;">
+                <div class="second-sign" style="">
+                    <span>已选择渠道</span>
+                    <span>绑定渠道账号</span>
+                </div>
+                <div class="content-left">
+                </div>
+                <div class="content-right">
+                    <p>
+                        <label>用户名</label>
+                        <input type="text" class="bind-username"><br>
+                    </p>
+                    <p>
+                        <label>密&nbsp;&nbsp;&nbsp;码</label>
+                        <input type="password" class="bind-password">
+                    </p>
+                    <p class="randomcode">
+                        <label>验证码</label>
+                        <input type="text" class="bind-rand">
+                        <img src="http://www.liepin.com/image/randomcode" alt="">
+                    </p>
+                    <p>
+                        <button type="submit" class="bind bind-input">绑定</button>
+                    </p>
+                </div>
+                <div class="body-next">
+                    <p class="page-btn">
+                        <span id="second-pre-btn" class="pre-btn">上一步</span>
+                        <span id="second-next-btn" class="next-btn">下一步</span>
+                    </p>
+                </div>
+            </div>
+            <!--第三页-->
+            <div class="channel-third" style="display:none;">
+                <div class="success">
+                    <h1>恭喜您！绑定成功！</h1>
+                </div>
+                <p>
+                    <a class="success-btn" href="javascript:">进入</a>
+                </p>
+            </div>
+        </div>
+
+    </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/index.js"></script>
+<script src="js/full_screen.js"></script>
+<script>
+    //渠道管理事件
+    $("#first-next-btn").click(function () {
+        $(".channel-first").css("display", "none");
+        $(".channel-second").css("display", "block");
+        $(".head-content li:eq(1) span:eq(1)").addClass("font-color");
+        $(".head-content li:eq(1) span:eq(0)").css("background-color", "#ffa625");
+
+        $(".head-content li:eq(0) span:eq(1)").removeClass("font-color");
+        $(".head-content li:eq(0) span:eq(0)").css("background-color", "#d8d8d8");
+
+    });
+    $("#second-pre-btn").click(function () {
+        $(".channel-first").css("display", "block");
+        $(".channel-second").css("display", "none");
+        $(".head-content li:eq(1) span:eq(1)").removeClass("font-color");
+        $(".head-content li:eq(1) span:eq(0)").css("background-color", "#d8d8d8");
+
+        $(".head-content li:eq(0) span:eq(1)").addClass("font-color");
+        $(".head-content li:eq(0) span:eq(0)").css("background-color", "#ffa625");
+    });
+    $("#second-next-btn").click(function () {
+        $(".channel-third").css("display", "block");
+        $(".channel-second").css("display", "none");
+        $(".head-content li:eq(1) span:eq(1)").removeClass("font-color");
+        $(".head-content li:eq(1) span:eq(0)").css("background-color", "#d8d8d8");
+
+        $(".head-content li:eq(2) span:eq(1)").addClass("font-color");
+        $(".head-content li:eq(2) span:eq(0)").css("background-color", "#ffa625");
+    });
+    $(".success-btn").click(function () {
+        $(".mask").css("display", "none");
+    });
+    $(".cancel-btn").click(function () {
+        $(".mask").css("display", "none");
+        //self.location="index.html";
+    });
+</script>
+</body>
+</html>

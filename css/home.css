@@ -1,0 +1,244 @@
+/*header样式*/
+header {
+    width:1200px;
+    height:60px;
+    margin:0 auto;
+    /*border:1px solid red;*/
+}
+.logo {
+    width:207px;
+    height:60px;
+    line-height:60px;
+    float:left;
+    font-size:30px;
+}
+.logo a {
+    color:#00aaed;
+}
+
+.button{
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    float: right;
+}
+.button a {
+    float:right;
+    margin-right:10px;
+    margin-top:10px;
+}
+.btn {
+    width:90px;
+    height:35px;
+    line-height:35px;
+    font-size:16px;
+    text-align:center;
+    border-radius:5px;
+    display:block;
+}
+.login-btn {
+    background-color:#00aaed;
+    color:#fff;
+}
+.register-btn {
+    border:1px solid #00aaed;
+    color:#00aaed;
+}
+.banner-one {
+    width:100%;
+    height:700px;
+    margin:0 auto;
+    background:url("../images/banner-one.gif");
+}
+.content-one {
+    width:1200px;
+    height:100%;
+    margin:0 auto;
+    color:#fff;
+}
+.content-one-left ,.content-one-right {
+    width:550px;
+    height:500px;
+}
+.content-one-left {
+    float:left;
+}
+.content-one-right {
+    float:right;
+}
+.pt180{
+    padding-top:180px;
+}
+.pt160 {
+    padding-top:160px;
+}
+.ft50 {
+    font-size:50px;
+}
+.ft18 {
+    font-size:18px;
+}
+.ft20 {
+   font-size:20px;
+    color:#282828;
+}
+.ft28 {
+    font-size:28px;
+}
+.ft38 {
+    font-size:38px;
+}
+.ft-16 {
+    font-size:16px;
+}
+.pt10{
+    padding-top:10px;
+}
+.pt30 {
+    padding-top:30px;
+}
+.pt18 {
+    padding-top:18px;
+}
+.pt50 {
+    padding-top:50px;
+}
+
+.banner-two {
+    width:100%;
+    height:510px;
+    margin:0 auto;
+    background-color:#fff;
+}
+.content-two .icon-font {
+    float:left;
+    width:288px;
+    height:320px;
+    /*border:1px solid red;*/
+}
+.icon-border {
+    width:100px;
+    height:100px;
+    line-height:100px;
+    margin:0 auto;
+    border-radius:50px;
+    border:1px solid #00aaed;
+}
+.banner-three {
+    width:100%;
+    height:550px;
+    margin:0 auto;
+    background:url("../images/banner-three.gif");
+    color:#fff;
+}
+.icon-text {
+    padding-left: 45px;
+    padding-right:45px;
+    text-align:left;
+}
+.iconsize50 {
+    font-size:50px!important;
+}
+.iconsize50-color {
+    color:#00aaed;
+}
+.banner-four ,.banner-five {
+    width:100%;
+    height:580px;
+    margin:0 auto;
+}
+.content-two,.content-four,.content-five {
+    width:1200px;
+    height:100%;
+    margin:0 auto;
+}
+.four-text,.five-text {
+    width:500px;
+    height:200px;
+}
+.four-text{
+    float:right;
+}
+.five-text {
+    float:left;
+}
+.pt100 {
+    padding-top:100px;
+}
+.pt130 {
+    padding-top:130px;
+}
+.pt170 {
+    padding-top:170px;
+}
+.four-img ,.five-img{
+    width:542px;
+    height:382px;
+}
+.four-img {
+    float:left;
+    background:url("../images/four-img.png");
+}
+.five-img{
+    float:right;
+    background:url("../images/five-img.png");
+
+}
+.banner-six {
+    width:100%;
+    height:150px;
+    margin:0 auto;
+    background:url("../images/footer.png");
+}
+.content-six {
+    width:1200px;
+    height:150px;
+    line-height:150px;
+    margin:0 auto;
+}
+.six-text {
+    color:#e55d56;
+    float:left;
+}
+footer {
+    width:100%;
+    height:40px;
+    line-height:40px;
+    margin:0 auto;
+}
+/*登录注册样式*/
+.register-box {
+padding-top:170px;
+}
+.index-1-sign {
+    /*width:100px;*/
+    height:60px;
+    padding-top:20px;
+}
+.index-1-sign a {
+    font-size:20px;
+    color:#fff;
+    text-align:center;
+    margin-right:20px;
+}
+#register {
+    display:none;
+}
+.active {
+    border-bottom:2px solid blue;
+}
+#register input,#login input {
+    width:300px;
+    height:40px;
+    margin-bottom:20px;
+    padding-left:10px;
+}
+.BtnLogin ,.BtnRegister{
+    border-radius:5px;
+    background-color:#2bb3eb;
+    color:#fff;
+}
+.form-box {
+    /*margin-top:250px;*/
+}
+

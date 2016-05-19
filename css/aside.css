@@ -1,0 +1,244 @@
+
+#header {
+    width:100%;
+    max-width:1920px;
+    min-width:1200px;
+    height:60px;
+    background-color:#00aaed;
+}
+.header-title {
+    float:left;
+    width:150px;
+    height:50px;
+    line-height:50px;
+    color:#fff;
+    text-align: left;
+    padding-left:10px;
+}
+.header-title a{
+    font-size:30px;
+    color:#fff;
+}
+.header-title p {
+
+}
+.addJob ,.addChannel,.addChannel-left{
+    width:120px;
+    height:30px;
+    line-height:30px;
+    font-size:16px;
+    background-color:#fff;
+    border-radius:5px;
+    padding:2px 0;
+}
+.addJob {
+    position:absolute;
+    left:315px;
+    top:13px;
+}
+.addJob span ,.addChannel span,.addChannel-left span{
+    color:#00aaed;
+}
+.addChannel {
+    position:absolute;
+    top:13px;
+    left:460px;
+}
+.addChannel-left {
+    position:absolute;
+    top:13px;
+    left:315px;
+}
+.icon-addChannel {
+    width:16px;
+    height:16px;
+    display:block;
+    background:url("../images/add.png");
+}
+.userInfo-box {
+    width:210px;
+    height:30px;
+    line-height:30px;
+    position:absolute;
+    left:915px;
+    top:15px;
+    text-align:left;
+}
+.info-color{
+    color:#fff;
+}
+.layout-color {
+    padding-left:10px;
+    color:#666;
+}
+.iconsize50 {
+    font-size:50px!important;
+}
+.iconColor-fff {
+    color:#fff;
+    padding-right:10px;
+}
+
+
+/*搜索框样式*/
+#s_btn {
+    cursor: pointer;
+    position: absolute;
+    left: 150px;
+    top: 3px;
+}
+.search-color {
+    color:#fff;
+}
+.header-input {
+    position:absolute;
+    top: 10px;
+    left:720px;
+}
+
+.s_input .s_box .s_keyworld {
+    width: 170px;
+    height: 38px;
+    line-height: 38px;
+    float: left;
+    padding-left:16px;
+    outline: none;
+    border:none;
+    border-radius: 20px;
+    background-color:#00b5ef;
+    color:#fff;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color:    #fafafa;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:    #fafafa;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color:    #fafafa;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color:    #fafafa;
+}
+/*左侧图标样式*/
+
+#container {
+    /*width:1200px;*/
+    width:100%;
+    min-width:1170px;
+    max-width:1440px;
+    position:relative;
+    overflow:hidden;
+}
+#left-content a {
+    color:#aeaeae;
+}
+#container a:hover ,a:hover{
+    text-decoration:none;
+    /*color:#454545;*/
+}
+#center-content {
+    width:20%;
+    min-width:230px;
+    float:left;
+}
+#right-content {
+    /*width:744px;*/
+    width:75%;
+    min-width:744px;
+    max-width:764px;/*788px 755*/
+    float:left;
+    padding-left:30px;
+    margin-top:10px;
+    height:100%;
+    overflow:auto;
+}
+
+
+/*左侧导航栏样式*/
+#left-content {
+    /*width:150px;*/
+    width:4%;/*10%*/
+    /*min-width:150px;*/
+    /*height:935px;*/
+    height:100%;
+    float:left;
+    background-color: #31393c;
+}
+.logo {
+    /*background-color:#fafafa;*/
+}
+.logo img{
+    width:120px;
+    height:130px;
+    margin:0 auto;
+}
+#left-content ul{
+    margin:0 auto;
+    margin-top:40px;
+}
+#left-content ul li {
+    font-size:16px;
+    height:70px;
+    /*line-height:50px;*/
+    text-align: center;
+    border-bottom:1px solid #2b3237;
+    position:relative;
+}
+#left-content ul li a:hover {
+    text-decoration:none;
+    color:#fff;
+}
+#left-content ul .active a {
+    color:#fff;
+    text-decoration: none;
+}
+#left-content ul li p {
+    font-size:12px;
+    padding-top:10px;
+}
+.active {
+    background-color:#222b2b;
+    
+}
+/*上下页样式*/
+.page_box {
+    min-height: 48px;
+    text-align:center;
+}
+.page_box ul {
+    /*font-size:14px;*/
+    display:inline-block;
+    padding-top:16px;
+}
+.page_box li{
+    float:left;
+    width:100px;
+    text-align:center;
+}
+.pagecolor {
+    color:#e5e5e5;
+}
+.cuti {
+    font-weight:bold;
+}
+.float-right {
+    position:absolute;
+    top:20px;
+    left:20px;
+}
+.pad-top {
+    padding-top:20px;
+}
+
+/*图标大小*/
+.icon-size22 {
+    font-size:22px!important;
+}
+.btn-set {
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:4%;
+}

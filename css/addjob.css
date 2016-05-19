@@ -1,0 +1,164 @@
+#right-content {
+    width:744px;
+    float:left;
+    /*margin-left:30px;*/
+}
+.addjob {
+    width:744px;
+    background-color:#fafafa;
+    padding-bottom:40px;
+}
+.addjob .add-title {
+     height:36px;
+    line-height:36px;
+    font-size:16px;
+    text-align:left;
+    padding-left:60px;
+    border-bottom:1px dotted #f1f1f1;
+}
+.addjob dd {
+    height:40px;
+    line-height:40px;
+    position:relative;
+}
+.addjob dd input {
+    border:2px solid #e5e5e5;
+    outline: none;
+    cursor: pointer;
+}
+.redstar {
+    width:25px;
+    color: #fe6161;
+    /*padding: 0 5px;
+    margin: 15px 0 0 10px;*/
+}
+.data {
+    width:50px;
+    padding:0 10px;
+}
+
+.selector {
+    height:20px;
+    padding: 6px 10px 6px 10px;
+}
+.selector-380 {
+    width:366px!important;
+}
+.icon {
+    width:10px;
+    height:10px;
+    border:1px solid #000;
+    background:url("../images/select_r.png");
+}
+.email {
+    text-align: left;
+    padding-left: 131px;
+}
+.data-email {
+    padding-left:12px;
+}
+
+.ul-radio {
+    position:absolute;
+    top:2px;
+    left:224px;
+}
+.ul-radio li {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    cursor: pointer;
+    border: 2px solid #f1f1f1;
+    background: #fff;
+    float: left;
+    margin-right: 15px;
+    position: relative;
+}
+.ul-radio li input {
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    opacity:0;
+}
+.ul-radio .current{
+    border: 2px solid #91cebe;
+}
+.salary-range {
+    margin-right:20px;
+}
+.salary {
+    width:100px;
+    height:30px;
+}
+.pattern {
+    padding-left:20px;
+}
+.select {
+    display:inline-block;
+    width:34px;
+    height:32px;
+    border:2px solid #e5e5e5;
+    background-color:#fff;
+    position:absolute;
+    top:3px;
+    right:131px;
+    cursor: pointer;
+}
+.sort {
+    display:inline-block;
+    width:34px;
+    height:32px;
+    background:url(../images/iconfont-sort-down.png) no-repeat 9px 5px;
+}
+.job-desc {
+    height:260px!important;
+    line-height:50px!important;
+}
+#job-desc {
+    height:180px;
+    margin-top:10px;
+    margin-left: 135px;
+    border: 2px solid #e5e5e5;
+    outline: none;
+}
+.desc-pos {
+    position:absolute;
+    top:1px;
+    left:145px;
+    width:56px;
+}
+.star-pos {
+    position:absolute;
+    top:1px;
+    left:123px;
+}
+.no-desc {
+    margin-left:205px;
+    color:#f00;
+}
+.job-temp {
+    width:410px;
+}
+.resume-email {
+    width:300px;
+}
+.btn {
+    padding: 0 55px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    height: 32px;
+    line-height: 32px;
+    background: #91cebe;
+    float: left;
+    margin: 15px 40px 0 160px;
+    overflow: hidden;
+    transition: background 0.2s ease-in 0s;
+}
+.release {
+    margin:0 auto;
+}
+

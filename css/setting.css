@@ -1,0 +1,173 @@
+
+.zhezhao{
+    background-color: #666666;
+    display: none;
+    height: 100%;
+    left: 0;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index-1: 99;
+}
+
+/* lzx*/
+.j-top{ width:100%; height:30px; background-color: #F4F4F4;color: #676767;text-align: center; border-bottom:1px solid #ccc; position:relative; z-index-1:400;}
+.j-top a {color:#676767;}.j-top a:hover {color:#E00001;}
+.j-top-warp{ width:1200px; margin:0 auto; height:30px; line-height:30px;}
+.j-top-warp h3{ color: #ff8500 ; text-align: left; font-size: 16px;}
+
+
+
+/*.recorded_box{width:1200px; margin: 0 auto;padding-top:70px;}*/
+/*.recorded_warp{ width:1200px; margin: 0 auto; margin-top:20px;}*/
+.recorded_warp  .tool_left{ float: left; width:250px; height: 100%; background: #FAFAFA;  /*margin-left: 30px;*/}
+.recorded_warp  .tool_left  ul { margin: 10px 0;}
+.recorded_warp  .tool_left ul li{height: 40px;line-height:40px; border-bottom: 1px solid #ccc;;cursor: pointer; font-weight:bold;}
+.recorded_warp  .tool_left ul li.selected{ border-left: 2px solid #FF8500; background: #fff;}
+.recorded_warp .tool_mid{ float: left; width:700px; display: inline; margin-left: 30px;margin-top:10px; height:100%; border: 1px solid #ccc;}
+
+.tool_mid .resume_gird{ width:400px; margin:10px auto; height:40px;}
+.tool_mid label{float: left; display: block; width: 100px; height: 30px; line-height: 30px; text-align:center; margin-top:5px;}
+.tool_mid input{ float:left;height:28px;display:inline-block;border:1px solid #d2ccc4;line-height:28px;font-weight:bold;padding-left:10px;width:180px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden; margin-top:5px;}
+.tool_mid img{ float:left; height:18px; width:60px; margin-top:11px; display:block;}
+.tool_mid .confirm_btn{ width: 160px; height: 30px; line-height: 30px; border: 1px solid #ccc; text-align: center; display: block; margin: 10px auto;}
+.set-title a {
+    font-weight: normal;
+    color:#00aaed;
+    cursor:text;
+}
+.set-title {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #ccc;
+    text-align:left;
+    padding-left:15px;
+}
+
+.bind-img {
+    padding-left:50px;
+    overflow:hidden;
+}
+.bind-img  ul li {
+    display: inline;
+    float: left;
+    width: 148px;
+    height: 125px;
+    border: #f1f1f1 solid 1px;
+    padding: 20px 10px 10px 10px;
+    margin: 20px 15px 20px 0;
+    text-align: center;
+}
+.img_div {
+    text-align: center;
+    width: 148px;
+    margin: 0 auto;
+    height: 88px;
+    vertical-align: top;
+}
+.bind-img  ul li img {
+    margin-bottom: 20px;
+    max-width: 148px;
+    max-height: 88px;
+}
+.bind-btn ,.bind-success{
+    width: 148px;
+    height: 28px;
+    line-height: 28px;
+    border-radius:3px;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor:pointer;
+}
+.bind-btn {
+    background-color:#529ECB;
+}
+.bind-success{
+    background-color:#35c87a;
+    /*display:none;*/
+
+}
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100,100,100,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+.bind-box {
+    width:700px;
+    height:440px;
+    position:absolute;
+    top:6%;
+    left:20%;
+    background-color:#fff;
+}
+.close-btn {
+    width:30px;
+    height:30px;
+    line-height:30px;
+    background-color:#00b5ef;
+    border-radius:15px;
+    color:#fff;
+    cursor:pointer;
+    position:absolute;
+    right:-10px;
+    top:-10px;
+}
+.bindBox-left {
+    float:left;
+    width:175px;
+    height:175px;
+    border-radius:90px;
+    margin:100px 30px 20px 30px;
+    background-color:#f1f1f1;
+}
+.bindBox-left img {
+    width:128px;
+    height:76px;
+    margin-top:50px;
+}
+.bindBox-right {
+    float:left;
+    width:400px;
+    height:330px;
+    border-left:1px solid #f1f1f1;
+    display: inline;
+    margin-top:70px;
+}
+.bindBox-right h4 {
+    color: #4277ad;
+    font-size: 24px;
+    font-weight:normal;
+    margin-bottom: 30px;
+}
+.bindBox-right .form-item {
+    margin-bottom:15px;
+}
+.form-item label {
+    width: 70px;
+    text-align: left;
+    display:inline-block;
+}
+.form-item input{
+    width:200px;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px 3px 3px 3px;
+    padding: 4px;
+}
+.bind-input ,.binding-input{
+    margin-left:73px;
+    background-color:#529ECB;
+    color:#fff;
+}
+.binding-input {
+    display:none;
+}
+.bind-rand {
+    width: 135px !important;
+}

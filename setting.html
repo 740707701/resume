@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>设置</title>
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/aside.css"/>
+    <link rel="stylesheet" href="css/setting.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+
+</head>
+<body>
+<div id="header">
+    <div class="header-title">
+        <p>
+            <a href="index.html">
+                <i class="iconfont iconsize50 iconColor-fff">&#xe60d;</i>聘宝
+            </a>
+        </p>
+    </div>
+    <!--<div class="addChannel">
+        <a href="setting.html" title="" >
+            <span>添加渠道</span>
+            <i class="iconfont icon-size22">&#xe608;</i>
+        </a>
+    </div>-->
+    <div class="header-input">
+        <div class="s_input">
+            <div class="s_box">
+                <input class="s_keyworld" type="text" placeholder="输入关键字搜索"/>
+                <input id="jId" type="hidden"/>
+                <i id="s_btn" class="iconfont icon-size22 search-color" type="submit">&#xe600;</i>
+            </div>
+        </div>
+    </div>
+    <div class="addJob">
+
+        <a class="icon-add" id="addBtn" href="addjob.html?id=">
+            <span>发布新职位</span>
+            <i class="iconfont icon-size22">&#xe608;</i>
+        </a>
+    </div>
+    <div class="userInfo-box" >
+        <i class="iconfont iconColor-fff">&#xe609;</i>
+        <span id="userInfo" class="info-color"></span>
+        <a class="layout-color" href="javascript:logout()"> 注销 </a>
+    </div>
+</div>
+<div id="container">
+    <div id="left-content">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <p><i class="iconfont icon-size22">&#xe606;</i><br>招才宝</p>
+                </a>
+            </li>
+            <li>
+                <a href="index-2.html">
+                    <p><i class="iconfont icon-size22">&#xe601;</i><br>聚才宝</p>
+                </a>
+            </li>
+
+        </ul>
+        <div class="btn-set active">
+            <a href="setting.html">
+                <p><i class="iconfont icon-size22">&#xe605;</i><br>设置</p>
+            </a>
+        </div>
+    </div>
+
+    <!--设置部分-->
+    <!--<div class="recorded_box">
+        <div class="recorded_warp clearfix">
+            <div class="tool_left">
+                <ul>
+                    <p class="set-title"><a href="javascript:">招聘渠道</a></p>
+                    <li class="selected dfg" style="text-align:center"><a href="javascript:addUser(1)">拉勾</a></li>
+                    <li class="" style="text-align:center"><a href="javascript:addUser(2)">猎聘</a></li>
+                    <li class="" style="text-align:center"><a href="javascript:addUser(3)">智联</a></li>
+                </ul>
+            </div>&lt;!&ndash;tool_left END&ndash;&gt;
+            <div class="tool_mid">
+                <form id='addForm' action='http://"+window.location.hostname+":8800/resume/users/login/third_site' type='post' >
+                    <div class="clearfix resume_gird">
+                        <label>用户名:</label>
+                        <input type="text" name="" value="" id="user_name">
+                    </div>
+                    <div class="clearfix resume_gird">
+                        <label>密码:</label>
+                        <input type="text" name="" value="" id="user_pass">
+                    </div>
+                    <div class="clearfix resume_gird">
+                        <label>验证码:</label>
+                        <input type="text" name="" value="" id="img_vaildate">
+                        <img src="http://www.liepin.com/image/randomcode"/>
+                    </div>
+                    <div class="dd_show">
+                        <a  class="confirm_btn" id="confirm_btn" href="javascript:addUser(1);"  style="cursor:pointer">提交</a>
+                        <a  class="confirm_btn" href="javascript:addUser(2);"  style="cursor:pointer; display:none;">提交</a>
+                        <a  class="confirm_btn" href="javascript:addUser(3);"  style="cursor:pointer;display:none;">提交</a>
+                    </div>
+                </form>
+
+            </div>&lt;!&ndash;tool_mid&ndash;&gt;
+
+        </div>&lt;!&ndash;recorded_warp&ndash;&gt;
+    </div>-->
+    <!--绑定设置-->
+    <div class="bind-img">
+        <ul>
+            <!--<li>
+                <div class="img_div">
+                    <img src="images/p-lagou.jpg" alt="拉勾网">
+                </div>
+                <input type="submit" value="立即绑定" class="bind-btn" id="lagou-btn">
+                <input type="submit" value="绑定成功" class="bind-success" id="lagou-success">
+            </li>
+            <li>
+                <div class="img_div">
+                    <img src="images/p-liepin.jpg" alt="猎聘网">
+                </div>
+                <input type="submit" value="立即绑定" class="bind-btn" id="liepin-btn">
+                <input type="submit" value="绑定成功" class="bind-success" id="liepin-success">
+            </li>
+            <li>
+                <div class="img_div">
+                    <img src="images/p-zhilian.jpg" alt="智联招聘">
+                </div>
+                <input type="submit" value="立即绑定" class="bind-btn" id="zhilian-btn">
+                <input type="submit" value="绑定成功" class="bind-success" id="zhilian-success">
+            </li>-->
+        </ul>
+    </div>
+</div>
+<div class="mask">
+    <div class="bind-box">
+        <div class="bindBox-left">
+            <!--<img src="images/p-lagou.jpg" alt="拉勾">-->
+        </div>
+        <div class="bindBox-right">
+            <h4>请输入账号信息</h4>
+            <div class="form-item">
+                <label for="">用户名：</label>
+                <input type="text" class="bind-username">
+            </div>
+            <div class="form-item">
+                <label for="">密&nbsp;&nbsp;&nbsp;&nbsp;码：</label>
+                <input type="text" class="bind-password">
+            </div>
+            <div class="form-item">
+                <label for="">验证码：</label>
+                <input type="text" class="bind-rand">
+                <img src="http://www.liepin.com/image/randomcode" alt="验证码">
+            </div>
+            <div class="form-item">
+                <input type="submit" value="绑&nbsp;&nbsp;&nbsp;&nbsp;定" class="bind-input">
+                <input type="submit" value="绑&nbsp;&nbsp;&nbsp;&nbsp;定&nbsp;&nbsp;&nbsp;&nbsp;中&nbsp;&nbsp;..." class="binding-input">
+            </div>
+        </div>
+        <div class="close-btn">X</div>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/setting.js"></script>
+<script src="js/full_screen.js"></script>
+<script>
+
+    $(".close-btn").click(function(){
+        $(".mask").hide();
+    });
+    /*$(".bind-input").click(function(){
+        $("#lagou-btn").hide();
+        $(".mask").hide();
+        $("#lagou-success").show();
+    });*/
+
+
+    /*$("#lagou-btn").click(function(){
+        $(".bindBox-left img").attr("src","../images/p-lagou.jpg");
+        $(".bind-input").click(function(){
+            $("#lagou-btn").hide();
+            $(".mask").hide();
+            $("#lagou-success").show();
+        });
+    });
+    $("#liepin-btn").click(function(){
+        $(".bindBox-left img").attr("src","../images/p-liepin.jpg");
+        $(".bind-input").click(function(){
+            $("#liepin-btn").hide();
+            $(".mask").hide();
+            $("#liepin-success").show();
+
+        });
+    });
+    $("#zhilian-btn").click(function(){
+        $(".bindBox-left img").attr("src","../images/p-zhilian.jpg");
+        $(".bind-input").click(function(){
+            $("#zhilian-btn").css("display","none");
+            $(".mask").css("display","none");
+            $("#zhilian-success").css("display","block");
+        });
+    });*/
+</script>
+</body>
+</html>

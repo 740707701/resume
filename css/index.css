@@ -1,0 +1,531 @@
+
+
+
+
+
+/*中间招聘管理样式*/
+#center-content {
+    /*width:250px;*/
+    float:left;
+    width:17%;
+    min-width:230px;
+    height:100%;
+    border-right:4px solid #d8d8d8;
+    overflow:auto;
+}
+.slidebar {
+    overflow:auto;
+    /*height:935px;*/
+    height:100%;
+}
+#center-content a:hover{
+    text-decoration: none;
+}
+.company_center_slide {
+    background: #fafafa;
+    /*margin-bottom: 12px;*/
+    text-align:left;
+    position:relative;
+}
+.company_center_slide h2 {
+    font-weight:normal;
+    /*font-size:16px;*/
+}
+.company_center_slide dt {
+    height: 40px;
+    line-height: 50px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    color: #777;
+    max-height: 50px;
+    overflow: hidden;
+}
+.company_center_slide dd {
+    position: relative;
+    /*font-size: 14px;*/
+    /*padding-bottom: 10px;*/
+    border-top: 1px solid #e5e5e5;
+}
+.company_center_slide dd .jobid {
+    /*width:215px;
+    height:63px;
+    display:block;*/
+}
+
+.slidebar .company_center_slide p {
+    color: #666;
+    line-height: 20px;
+    padding: 8px 19px 0 27px;
+}
+.resume-count {
+    float: right;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 10px;
+    background-color:#72d8f7;
+    color:#fff;
+}
+.admin,.history {
+    padding-left: 20px;
+    height:50px;
+    line-height: 50px;
+    padding-bottom:0!important;
+}
+.admin h3,.history h3 {
+    font-weight:normal;
+}
+.jobTitle {
+    color: #72d8f7 !important;
+}
+.p10 {
+    padding-top: 10px;
+}
+
+/*右侧简历列表部分*/
+#right-content {
+    /*width:744px;*/
+    width:65%;
+    min-width:744px;
+    float:left;
+    padding-left:20px;
+    margin-top:10px;
+    height:100%;
+    overflow:auto;
+}
+
+
+/*人才列表样式 */
+.s_joblist {
+    /*border:1px solid #cfcfcf;
+    border-top:0;*/
+    padding:10px 20px;
+
+}
+.s_joblist li {
+    width:100%;
+    background-color: #fff;
+    border:1px solid #e5e5e5;
+    margin: 0 20px 10px 0;
+}
+.s_joblist .list_header{
+    color: #333;
+    /*font-size: 14px;*/
+    background-color: #fafafa;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 17px;
+    position: relative;
+}
+.s_joblist .list_header .list_left{
+    float: left;
+    max-width: 230px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.s_joblist .list_header .list_middle{
+    position: absolute;
+    left: 35%;
+    top: 0;
+}
+.s_joblist .list_header .list_right{
+    float: right;
+    color: #999;
+}
+.latest_login {
+    line-height: 14px;
+    margin: 11px 12px 11px 0;
+}
+
+.s_joblist .list_body {
+    padding:3px 0;
+    min-height:20px;
+}
+.s_joblist .list_body .body_imgdesc {
+    padding:0 17px;
+    height:50px;
+    position:relative;
+}
+.s_joblist .list_body .body_imgdesc .avatar {
+    float: left;
+    height: 48px;
+    width: 48px;
+    border-radius: 24px;
+    position: relative;
+    top: 4px;
+}
+.body_imgdesc .desc {
+    float: left;
+    color: #999;
+    width:400px;
+    height: 50px;
+    line-height: 60px;
+    max-width: 750px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align:left;
+    position:absolute;
+    left:80px;
+}
+.body_imgdesc .icon_con {
+    margin-left: 20px;
+    display: inline-block;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    position:absolute;
+    left:480px;
+}
+.s_joblist .body_imgdesc .invitebtn,.s_joblist .body_imgdesc .invitebtned {
+    float: right;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 4px;
+    width: 81px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    position: relative;
+    top: 15px;
+}
+.s_joblist .body_imgdesc .invitebtn{
+    color: #00aaed;
+    border: 1px solid #00aaed;
+}
+.s_joblist .body_imgdesc .invitebtn:hover{
+    color:#fff;
+    background-color:#00aaed;
+}
+.s_joblist .body_imgdesc .invitebtned {
+    background-color:#fff;
+    border:1px solid #cfcfcf;
+    color:#e5e5e5;
+}
+.put {
+    display:inline-block;
+    width:165px;
+}
+.put a {
+    float:left;
+    color:#999;
+}
+.trash-color {
+    color:#999;
+}
+.put-del {
+    position: absolute;
+    right: 23px;
+    bottom: 3px;
+}
+
+
+
+/*筛选样式*/
+.nav {
+    height:36px;
+    margin:0 auto;
+    margin-bottom:-2px;
+    position:relative;
+}
+.list-ul {
+    height:36px;
+    border-bottom:1px solid #cfcfcf;
+}
+.nav .list-ul li ,.nav .list-ul li a{
+    width:120px;
+    line-height:37px;
+    text-align:center;
+    float:left;
+}
+.resumeType {
+ }
+.nav .list-ul li:hover,.nav .list-ul .current{
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #cfcfcf;
+    border-bottom:none;
+}
+.nav .list-ul li .talentCount {
+    width:20px;
+    height: 20px;
+    line-height:20px;
+    border-radius:10px;
+    background-color:#00aaed;
+    display:block;
+    margin:-36px 0 5px 74%;
+    color:#fff;
+}
+
+/*简历详情样式*/
+.control-box {
+    margin-bottom:10px;
+    display:block;
+    overflow:hidden;
+    border: 1px solid #f1f1f1;
+}
+.control-box .box-title {
+    background-color: #cfcfcf;
+    border-bottom: 1px solid #ddd;
+    line-height: 35px;
+    padding: 5px 15px;
+}
+.control-box .box-title h2 {
+    margin: 0;
+    line-height: 25px;
+    text-align:left;
+    color:#fff;
+}
+.control-box .box-title h2 .big {
+    color:#fff;
+}
+.box-main {
+    padding:10px  20px;
+    overflow:hidden;
+}
+.box-main ul li {
+    float: left;
+    width: 25%;
+    line-height: 25px;
+    white-space: nowrap;
+    /*overflow: hidden;*/
+    text-overflow: ellipsis;
+    text-align:left;
+}
+.selected {
+    background-color: #f1f1f1;
+    color: #008000;
+}
+/*招聘渠道样式*/
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(100,100,100,0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display:none;
+}
+.channel {
+    margin:0 auto;
+    width:800px;
+    height:500px;
+    position:absolute;
+    top:6%;
+    left:23%;
+}
+.channel-head {
+    width:800px;
+    height:130px;
+    background-color:#fff;
+}
+.head-title {
+    margin:0 auto;
+    width:700px;
+    height:70px;
+    line-height:70px;
+    text-align:center;
+    border-bottom:1px solid #e5e5e5;
+}
+.f20 {
+    font-weight:bold;
+    font-size:20px;
+}
+.head-content {
+    height:55px;
+    line-height:55px;
+    padding:0 50px;
+}
+.head-content ul {
+    height:100%;
+}
+.head-content ul li{
+    float:left;
+    text-align:center;
+    margin-left:40px;
+}
+.circle {
+    padding: 1px 5px;
+    border-radius: 9px;
+    margin-right:10px;
+    background-color:#d8d8d8;
+    color:#fff;
+}
+.font-color {
+    color:#ffa625;
+}
+.orange {
+    background-color: #ffa625;
+}
+.line {
+    width:140px;
+    height:5px;
+    border-top:1px solid #d8d8d8;
+    display:inline-block;
+    margin-left:10px;
+}
+.channel-body {
+    width:800px;
+    height:370px;
+    background-color:#f6f6f6;
+}
+.prompt {
+    color:#ffa625;
+    padding-top:20px;
+}
+.body-detail {
+    margin:0 auto;
+    width:630px;
+    height:150px;
+    padding-top:50px;
+}
+.body-detail .channel-kind {
+    float:left;
+}
+.channel-kind {
+    width:185px;
+    height:50px;
+    margin-left:20px;
+    padding-top:10px;
+}
+.channel-kind input {
+    float:left;
+    height:50px;
+}
+.channel-kind span {
+    float: left;
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.p-channel{
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    display:block;
+    float:left;
+    margin-left: 10px;
+}
+.body-next {
+    height:50px;
+    padding-top:25px;
+    text-align:center;
+}
+.page-btn span {
+    margin:0 auto;
+    display: inline-block;
+    cursor:pointer;
+    margin-right: 25px;
+}
+.pre-btn,.next-btn ,.cancel-btn{
+    width: 105px;
+    height: 35px;
+    text-align: center;
+    color: #fff;
+    line-height: 35px;
+    border-radius: 2px;
+    background: #ffa625;
+    display:block;
+}
+.cancel-btn {
+    background-color:#fe6553!important;
+}
+/*第二页*/
+.channel-first,.channel-second{
+    width:690px;
+    height:300px;
+    margin:0 auto;
+}
+.channel-second {
+    /*padding-top:45px;*/
+    position:relative;
+}
+.content-left {
+    width:300px;
+    height:250px;
+    background-color:#f0f0f0;
+}
+.content-right {
+    width:380px;
+    height:250px;
+    background-color:#dadada;
+    position:absolute;
+    left:300px;
+    top:40px;
+}
+.second-sign {
+    width:100%;height:40px;line-height:40px;
+}
+.second-sign span{
+    width: 46%;
+    text-align: left;
+    display: inline-block;
+    color:#999;
+}
+
+.content-right p {
+    margin:20px 0;
+}
+.content-right p input ,.content-right p label{
+    width:200px;
+    height:25px;
+    line-height:25px;
+}
+.content-right p label{
+    margin-right:30px;
+}
+.bind {
+    color:#fff;
+    background-color:#e75e58;
+    width:206px;
+    height: 35px;
+    margin-left: 75px;
+    border-radius: 5px;
+    border: 0;
+}
+.randomcode label {
+    margin-left:-30px!important;
+}
+.randomcode input {
+    width:105px!important;
+}
+.randomcode img{
+    width:60px;
+    height:20px;
+    margin-bottom:-4px;
+    display:inline-block;
+}
+/*第三页*/
+.success {
+    width:570px;
+    height:160px;
+    padding-top:100px;
+    margin:0 auto;
+}
+.success  h1 {
+    font-size:30px;
+    color:#35c87a;
+    font-family:SimSun,sans-serif;
+}
+.success-btn {
+    width:100px;
+    height:50px;
+    line-height:50px;
+    font-size:20px;
+    border-radius:10px;
+    color:#fff;
+    background-color:#35c87a;
+    border:0;
+    display:inline-block;
+}
+.success-btn:hover{
+    text-decoration:none;
+}
+
+
+
+
+

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>发布新职位</title>
+    <link rel="stylesheet" href="css/global.css"/>
+    <link rel="stylesheet" href="css/aside.css"/>
+    <link rel="stylesheet" href="css/addjob.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <link rel="stylesheet" href="css/iconfont.css"/>
+
+</head>
+<body>
+<div id="header">
+    <div class="header-title">
+        <p>
+            <a href="index.html">
+                <i class="iconfont iconsize50 iconColor-fff">&#xe60d;</i>聘宝
+            </a>
+        </p>
+    </div>
+    <div class="addChannel-left">
+        <a href="setting.html" title="" >
+            <span>添加渠道</span>
+            <i class="iconfont icon-size22">&#xe608;</i>
+        </a>
+    </div>
+    <div class="header-input">
+        <div class="s_input">
+            <div class="s_box">
+                <input class="s_keyworld" type="text" placeholder="输入关键字搜索"/>
+                <input id="jId" type="hidden"/>
+                <i id="s_btn" class="iconfont icon-size22 search-color" type="submit">&#xe600;</i>
+            </div>
+        </div>
+    </div>
+    <!--<div class="addJob">
+        <a class="icon-add" id="addBtn" href="addjob.html?id=">
+            <span>发布新职位</span>
+            <i class="iconfont icon-size22">&#xe608;</i>
+        </a>
+    </div>-->
+    <div class="userInfo-box" >
+        <i class="iconfont iconColor-fff">&#xe609;</i>
+        <span id="userInfo" class="info-color"></span>
+        <a class="layout-color" href="javascript:logout()"> 注销 </a>
+    </div>
+</div>
+<div id="container">
+    <!--左侧部分-->
+    <div id="left-content">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <p><i class="iconfont icon-size22">&#xe606;</i><br>招才宝</p>
+                </a>
+            </li>
+            <li>
+                <a href="index-2.html">
+                    <p><i class="iconfont icon-size22">&#xe601;</i><br>聚才宝</p>
+                </a>
+            </li>
+        </ul>
+        <div class="btn-set">
+            <a href="setting.html">
+                <p><i class="iconfont icon-size22">&#xe605;</i><br>设置</p>
+            </a>
+        </div>
+    </div>
+    <!--中间招聘职位部分-->
+    <div id="center-content">
+        <div class="slidebar">
+            <dl class="company_center_slide  add-jobdetail">
+                <dt><h2>招聘职位</h2> <!--<a class="icon-add" href="addjob.html"></a>--></dt>
+
+            </dl>
+            <dl class="company_center_slide oldjob">
+                <!--<dd class="admin"><a href="javascript:">职位管理</a></dd>-->
+                <dd class="history"><a href="javascript:job();"><h2>历史职位</h2></a></dd>
+            </dl>
+        </div>
+    </div>
+    <!--右侧简历部分-->
+    <div id="right-content">
+        <dl class="addjob">
+            <dt class="add-title">
+            <h1>发布新职位</h1>
+            </dt>
+            <dd>
+                <span class="redstar">*</span>
+                <span class="data">职位类别</span>
+                    <span>
+                        <input class="selector selector-380" type="text" placeholder="请选择职位类别" id="category" value="PHP开发"/>
+                        <div class="select"> <i class="sort"></i></div>
+                    </span>
+            </dd>
+            <dd>
+                <span class="redstar">*</span>
+                <span class="data">职位名称</span>
+                    <span>
+                        <input class="selector selector-380" type="text" placeholder="请输入职位名称 如：产品经理" id="jobTitle"/>
+                    </span>
+            </dd>
+            <dd>
+                <span class="redstar">*</span>
+                <span class="data">所属部门</span>
+                    <span>
+                        <input class="selector selector-380" type="text" placeholder="请输入所属部门" id="department" value="产品开发部"/>
+                    </span>
+            </dd>
+            <dd class="job-radio email">
+                <span class="redstar">*</span>
+                <span class="data">工作性质</span>
+                    <span>
+                        <ul class="ul-radio">
+                            <li class="current" id="full-time">全职
+                                <em></em>
+                                <input type="radio"/>
+                            </li>
+                            <li id="part-time">兼职
+                                <em></em>
+                                <input type="radio"/>
+                            </li>
+                            <li id="intermship">实习
+                                <em></em>
+                                <input type="radio"/>
+                            </li>
+                        </ul>
+                    </span>
+            </dd>
+            <dd class="email">
+                <span class="redstar">*</span>
+                <span class="data">月薪范围</span>
+                    <span class="salary-range">
+                        <input class="salary" type="text" placeholder="  最低月薪" id="min-salary"/> K
+                    </span>
+                    <span class="">
+                        <input class="salary" type="text" placeholder="  最高月薪" id="max-salary"/> K
+                    </span>
+                <span class="pattern">只能输入整数,如：9</span>
+            </dd>
+            <dd>
+                <span class="redstar">*</span>
+                <span class="data">工作城市</span>
+                    <span>
+                        <input class="selector selector-380" type="text" placeholder="上海" id="jobCity" value="上海"/>
+                        <div class="select"><i class="sort"></i></div>
+                    </span>
+            </dd>
+            <dd>
+                <span class="redstar">*</span>
+                <span class="data">工作经验</span>
+                    <span>
+                        <input class="selector selector-380" type="text" placeholder="请选择工作经验" id="exper"/>
+                        <div class="select"><i class="sort"></i></div>
+                    </span>
+            </dd>
+            <dd>
+                <span class="redstar">*</span>
+                <span class="data">学历要求</span>
+                    <span>
+                        <input class="selector selector-380" type="text" placeholder="请选择学历要求" id="edu"/>
+                        <div class="select"><i class="sort"></i></div>
+                    </span>
+            </dd>
+            <dd class="email">
+                <span class="redstar">*</span>
+                <span class="data">职位诱惑</span>
+                    <span>
+                        <input class="selector job-temp" type="text" placeholder="20字描述该职位的吸引力，如福利待遇、发展前景等" id="jobTemp"/>
+                    </span>
+            </dd>
+            <dd class="job-desc">
+                <span class="redstar star-pos">*</span>
+                <span class="data desc-pos">职位描述</span>
+
+                    <!--<span>-->
+                       <span class="no-desc"> (请勿输入公司邮箱、联系电话、薪资面议及其他外链，否则将自动删除，不可恢复)</span>
+                       <!-- <input class="selector selector-380" type="text"/>-->
+                        <textarea name="" id="job-desc" class="selector job-temp"
+                                  placeholder="请输入岗位职责、任职要求等，建议尽量使用短句并分条列出"></textarea>
+                    <!--</span>-->
+            </dd>
+            <dd class="email">
+                <span class="redstar">*</span>
+                <span class="data">工作地址</span>
+                    <span>
+                        <input class="selector job-temp" type="text" value="上海市闵行区申长路888号虹桥天地3号楼（东区）5楼" id="jobAdr"/>
+                    </span>
+            </dd>
+            <dd class="email">
+                <span class="redstar">*</span>
+                <span class="data-email">接收邮箱：hr@greensea.com.cn</span>
+                <span></span>
+            </dd>
+            <!--<dd class="email">
+                <span>	同时简历自动发送至邮箱（仅一个）</span>
+                <span><input class="selector resume-email" type="text"/></span>
+            </dd>-->
+            <dd class="email">
+                    <span class="release">
+                        <a class="post" href="javascript:release(1)">
+                            <input type="button" class="btn" value="发布"/>
+                        </a>
+                    </span>
+            </dd>
+
+        </dl>
+    </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/addjob.js"></script>
+<script src="js/full_screen.js"></script>
+
+</body>
+</html>
